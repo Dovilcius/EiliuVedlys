@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/buttonPriekis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priekis" />
+
+            <Button
+                android:id="@+id/buttonNugara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nugara" />
+
+            <Button
+                android:id="@+id/buttonRankove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rankovė"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutApimtis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/labelApimtis"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Krūtinės apimtis (cm)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnMinusApimtis"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/minus"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Atimti"/>
+
+                <EditText
+                    android:id="@+id/inputApimtis"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="6dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:text="0"/>
+
+                <ImageButton
+                    android:id="@+id/btnPlusApimtis"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/plus"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Pridėti"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutLaisvumas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Laisvumas (cm)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnMinusLaisvumas"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/minus"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Atimti"/>
+
+                <EditText
+                    android:id="@+id/inputLaisvumas"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="6dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:text="0"/>
+
+                <ImageButton
+                    android:id="@+id/btnPlusLaisvumas"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/plus"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Pridėti" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTankis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mezgimo tankis"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="4dp" />
+
+                <ImageButton
+                    android:id="@+id/infoTankis"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/info_foreground"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Informacija" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:id="@+id/btnMinusTankis"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="6dp"
+                        android:src="@drawable/minus"
+                        android:background="@drawable/round_button"
+                        android:contentDescription="Atimti" />
+
+                    <EditText
+                        android:id="@+id/inputTankis"
+                        android:layout_width="60dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="6dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="0"/>
+
+                    <ImageButton
+                        android:id="@+id/btnPlusTankis"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/plus"
+                        android:background="@drawable/round_button"
+                        android:contentDescription="Pridėti"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/infoTankisText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pvz., jei 10 cm ruože yra 20 akių, tankis yra 20."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingTop="6dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnSkaiciuoti"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_calculate"
+        android:src="@drawable/skaiciuotii_foreground"
+        android:contentDescription="Skaičiuoti"/>
+
+    <TextView
+        android:id="@+id/rezultatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rezultatas: ? "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
+    </ScrollView>

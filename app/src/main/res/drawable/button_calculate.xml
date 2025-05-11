@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- paspaustas -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#94AFA0" />
+            <stroke android:width="2dp" android:color="#7CA990" />
+            <corners android:radius="20dp" />
+            <size android:width="64dp" android:height="64dp" />
+        </shape>
+    </item>
+
+    <!-- normalus -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#9F87A9" />
+            <stroke android:width="2dp" android:color="#987BA4" />
+            <corners android:radius="20dp" />
+            <size android:width="64dp" android:height="64dp" />
+        </shape>
+    </item>
+
+</selector>

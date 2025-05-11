@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- paspaustas -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#94AFA0" /> <!-- Šiek tiek tamsesnė mėtinė spalva -->
+            <stroke android:width="2dp" android:color="#7CA990" />
+            <size android:width="64dp" android:height="64dp" />
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+
+    <!-- normalus -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#9F87A9" />
+            <stroke android:width="2dp" android:color="#987BA4" />
+            <size android:width="64dp" android:height="64dp" />
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+
+</selector>
+

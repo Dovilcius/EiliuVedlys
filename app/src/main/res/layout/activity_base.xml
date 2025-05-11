@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonas"
+    tools:context=".BaseActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEZGUŽĖ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#9F87A9"
+        android:background="@drawable/title_background"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:shadowColor="#90000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+    <!-- mazesnis pavadinimas -->
+    <TextView
+        android:id="@+id/subTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text=" "
+        android:contentDescription="Puslapio antraštė"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subTitleText"></LinearLayout>
+
+    <!-- Apatiniai menu mygtukai -->
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/btnSekimas"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/sekimas_icon2_bold"
+            android:layout_margin="8dp"
+            android:contentDescription="Sekimo langas" />
+
+        <ImageButton
+            android:id="@+id/btnSiulu"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/sk2"
+            android:contentDescription="Siūlų skaičiavimai" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/home"
+            android:layout_margin="8dp"
+            android:contentDescription="Pagrindinis langas" />
+
+        <ImageButton
+            android:id="@+id/btnProjektai"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/projektu_icon"
+            android:layout_margin="8dp"
+            android:contentDescription="Projektų sąrašas" />
+
+        <ImageButton
+            android:id="@+id/btnAkiu"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/akiu_skai_icon"
+            android:layout_margin="8dp"
+            android:contentDescription="Akių ir eilių skaičiavimai" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

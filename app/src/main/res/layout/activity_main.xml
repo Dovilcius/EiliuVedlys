@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Kortelės -->
+    <GridLayout
+        android:id="@+id/cardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:layout_marginTop="3dp">
+        <!-- 1 -->
+        <LinearLayout
+            android:id="@+id/cardSekimas"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@drawable/sekimas"
+            android:gravity="bottom"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eilių sekimas"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- 2 -->
+        <LinearLayout
+            android:id="@+id/cardSiulu"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@drawable/skaiciuokle"
+            android:gravity="bottom"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siūlų skaičiuoklė"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- 3-->
+        <LinearLayout
+            android:id="@+id/cardProjektai"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@drawable/projektu"
+            android:gravity="bottom"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Projektai"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- 4 -->
+        <LinearLayout
+            android:id="@+id/cardAkiu"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:background="@drawable/akiu_sk"
+            android:gravity="bottom"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Akių skaičiuoklė"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>
