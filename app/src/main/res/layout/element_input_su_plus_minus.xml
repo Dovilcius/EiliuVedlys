@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/label"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_weight="1"
         android:text="Label"
         android:textSize="18sp"
@@ -23,13 +23,15 @@
 
         <Button
             android:id="@+id/btnMinus"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
             style="@style/MiniButtonStyle"
             android:text="-" />
 
         <EditText
             android:id="@+id/inputValue"
             android:layout_width="60dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:inputType="number"
             android:gravity="center"
             android:background="@android:color/white"
@@ -37,6 +39,7 @@
 
         <Button
             android:id="@+id/btnPlus"
+            android:layout_height="48dp"
             style="@style/MiniButtonStyle"
             android:text="+" />
     </LinearLayout>

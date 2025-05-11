@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:gravity="start">
 
-        <!-- Projektų vieta -->
+        <!-- Projektai -->
         <GridLayout
             android:id="@+id/cardGrid"
             android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:useDefaultMargins="true"
             android:layout_marginTop="3dp" />
 
-        <!-- Jei projektų nėra -->
+        <!-- kai projektu nėra -->
         <TextView
             android:id="@+id/textNeraProjektu"
             android:layout_width="wrap_content"

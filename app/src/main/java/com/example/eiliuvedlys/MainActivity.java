@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // susieti su bendrais maketo elementais
+        // Susiejam su bendro maketo elementais
         contentLayout = findViewById(R.id.contentLayout);
         titleText = findViewById(R.id.titleText);
 
@@ -32,7 +32,7 @@ public class MainActivity extends BaseActivity {
         btnAkiu = findViewById(R.id.btnAkiu);
         btnHome = findViewById(R.id.btnHome);
 
-        // activity_main.xml į bendrą dalį
+        // Įdeda activity_main.xml į bendrą dalį
         View childView = getLayoutInflater().inflate(R.layout.activity_main, null);
         contentLayout.addView(childView);
 
@@ -43,12 +43,12 @@ public class MainActivity extends BaseActivity {
         setActiveMenuButton(btnHome);
 
 
+        // Kortelės
         LinearLayout korteleSekimas = findViewById(R.id.cardSekimas);
         LinearLayout korteleSiulai = findViewById(R.id.cardSiulu);
         LinearLayout korteleProjektai = findViewById(R.id.cardProjektai);
         LinearLayout korteleAkiu = findViewById(R.id.cardAkiu);
 
-        // Kortelių paspaudimai
         nustatytiPaspaudima(korteleSekimas, SekimasActivity.class);
         nustatytiPaspaudima(korteleSiulai, SiuluActivity.class);
         nustatytiPaspaudima(korteleProjektai, ProjektaiActivity.class);
@@ -61,6 +61,7 @@ public class MainActivity extends BaseActivity {
         btnAkiu.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AkiuActivity.class)));
         btnHome.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MainActivity.class)));
     }
+
     private void nustatytiPaspaudima(View view, Class<?> destination) {
         view.setOnTouchListener((v, event) -> {
             switch (event.getAction()) {

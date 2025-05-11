@@ -1,5 +1,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#CC94AFA0"/> <!-- CC kad butu permatomas -->
+    <solid android:color="#CC94AFA0"/> <!-- CC persimato -->
     <stroke android:width="5dp" android:color="#9F87A9"/>
     <corners android:radius="10dp"/>
 

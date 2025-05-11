@@ -21,7 +21,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
 
-        // Susiejimas bendru komponentu
+        // Susiejame bendrus komponentus
         contentLayout = findViewById(R.id.contentLayout);
         titleText = findViewById(R.id.titleText);
         subTitleText = findViewById(R.id.subTitleText);
@@ -32,7 +32,7 @@ public class BaseActivity extends AppCompatActivity {
         btnAkiu = findViewById(R.id.btnAkiu);
         btnHome = findViewById(R.id.btnHome);
 
-        // bendra meniu mygtuku elgsena
+        // meniu mygtukų elgseną
         initBottomMenu();
     }
     protected void setSubTitleText(String text) {
@@ -65,17 +65,17 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     /**
-     * paryškinti aktyvų meniu mygtuką
+     * Metodas paryškina aktyvų meniu mygtuką
      */
     protected void setActiveMenuButton(ImageButton activeButton) {
-        // is naujo mygtuku spalvos
+        // nustatome visų mygtukų foną į įprastą
         if (btnSekimas != null) btnSekimas.setBackgroundResource(R.drawable.round_button);
         if (btnSiulu != null) btnSiulu.setBackgroundResource(R.drawable.round_button);
         if (btnProjektai != null) btnProjektai.setBackgroundResource(R.drawable.round_button);
         if (btnAkiu != null) btnAkiu.setBackgroundResource(R.drawable.round_button);
         if (btnHome != null) btnHome.setBackgroundResource(R.drawable.round_button);
 
-        // Aktyviam mygtukui kitas fonas
+        // Aktyviam mygtukui nustatomas paryškintas fonas
         if (activeButton != null) {
             activeButton.setBackgroundResource(R.drawable.round_button_active);
         }

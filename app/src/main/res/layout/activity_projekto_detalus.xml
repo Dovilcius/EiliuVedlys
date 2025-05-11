@@ -112,7 +112,7 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Priminimo nustatymas -->
+        <!-- Priminimas-->
         <TextView
             android:id="@+id/labelApimtis"
             android:layout_width="175dp"
@@ -121,7 +121,7 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_marginTop="8dp"/>
         <EditText
             android:id="@+id/inputPriminimoEile"
@@ -131,6 +131,7 @@
             android:inputType="number"
             android:background="@android:color/white"
             android:layout_marginTop="16dp" />
+
         <EditText
             android:id="@+id/inputPriminimoTekstas"
             android:layout_width="match_parent"
@@ -139,6 +140,7 @@
             android:inputType="text"
             android:background="@android:color/white"
             android:layout_marginTop="8dp" />
+
         <Button
             android:id="@+id/btnPridetiPriminima"
             android:layout_width="wrap_content"
